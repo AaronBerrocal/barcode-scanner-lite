@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BarcodeScannerLite" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/amazon_green</item>
+        <item name="colorPrimaryVariant">@color/bottle_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimarySurface">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/ivory</item>
+        <item name="colorSecondaryVariant">@color/ivory_p_500</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="colorOnBackground">@color/white</item>
+    </style>
+
+    <style name="Theme.BarcodeScannerLite.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.BarcodeScannerLite.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.BarcodeScannerLite.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Splashscreen Theme -->
+    <style name="Theme.CustomSplashScreenTheme" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <!--        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>-->
+        <item name="windowSplashScreenAnimationDuration">2000</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/amazon_green</item>
+        <item name="colorPrimaryVariant">@color/bottle_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimarySurface">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/ivory</item>
+        <item name="colorSecondaryVariant">@color/ivory_p_500</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <item name="postSplashScreenTheme">@style/Theme.BarcodeScannerLite</item>
+    </style>
+
+</resources>

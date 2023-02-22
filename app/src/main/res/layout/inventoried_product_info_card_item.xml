@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/custom_card_elevation"
+    android:layout_margin="@dimen/custom_margins_small"
+    app:cardCornerRadius="@dimen/custom_card_corner_size">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/custom_padding"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_inv_idx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.2"
+            android:padding="@dimen/custom_padding_small"
+            android:text="1"
+            style="@style/TextAppearance.MaterialComponents.Body1" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_inv_sku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/custom_padding_small"
+                android:text="ED459687"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <TextView
+                android:id="@+id/tv_inv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/custom_padding_small"
+                android:lines="1"
+                android:maxLines="2"
+                android:text="Caja Ritz 18 piezas"
+                style="@style/TextAppearance.MaterialComponents.Body1"
+                android:layout_below="@+id/tv_inv_sku"/>
+
+        </RelativeLayout>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:id="@+id/div1"
+            android:layout_width="@dimen/vertical_div_width"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/custom_margins"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/custom_margins"
+            android:background="?attr/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/ll_pkg_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_inv_package_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/custom_padding_small"
+                    android:text="Caja"
+                    style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+                <TextView
+                    android:id="@+id/tv_inv_qtyppkg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/custom_padding_small"
+                    android:text="18"
+                    android:layout_weight="1"
+                    style="@style/TextAppearance.MaterialComponents.Body2" />
+
+            </LinearLayout>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:id="@+id/div2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/horizontal_div_height"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="@dimen/custom_margins"
+                android:layout_marginEnd="@dimen/custom_margins"
+                android:layout_marginBottom="0dp"
+                android:background="?attr/colorPrimary"
+                android:layout_below="@+id/ll_pkg_info"/>
+
+            <LinearLayout
+                android:id="@+id/ll_units_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/div2" >
+
+                <TextView
+                    android:id="@+id/tv_inv_units_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/custom_padding_small"
+                    android:text="Unidades"
+                    style="@style/TextAppearance.MaterialComponents.Caption"/>
+
+                <TextView
+                    android:id="@+id/tv_inv_units_value"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:padding="@dimen/custom_padding_small"
+                    android:text="5"
+                    style="@style/TextAppearance.MaterialComponents.Body1" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

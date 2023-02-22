@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_barcode_scanner">
+
+    <!-- 1st Gen -->
+    <fragment
+        android:id="@+id/nav_barcode_scanner"
+        android:name="com.bluedragoon.barcodescannerlite.presentation.ui.scanner.BarcodeScannerFragment"
+        android:label="@string/menu_barcode_scanner"
+        tools:layout="@layout/fragment_barcode_scanner" >
+        <action
+            android:id="@+id/action_nav_barcode_scanner_to_nav_scanned_product"
+            app:destination="@id/nav_scanned_product"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_inventory_list"
+        android:name="com.bluedragoon.barcodescannerlite.presentation.ui.inventory.InventoryListFragment"
+        android:label="@string/menu_inventory_list"
+        tools:layout="@layout/fragment_inventory_list" />
+
+    <!-- 2nd Gen -->
+        <fragment
+            android:id="@+id/nav_scanned_product"
+            android:name="com.bluedragoon.barcodescannerlite.presentation.ui.productview.ScannedProductFragment"
+            android:label="@string/menu_scanned_product"
+            tools:layout="@layout/fragment_scanned_product" />
+
+
+</navigation>

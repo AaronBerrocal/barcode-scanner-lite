@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/custom_padding"
+    tools:context=".presentation.ui.scanner.BarcodeScannerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.budiyev.android.codescanner.CodeScannerView
+            android:id="@+id/scanner_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/custom_padding_small"
+            app:autoFocusButtonColor="?attr/colorOnBackground"
+            app:autoFocusButtonVisible="true"
+            app:flashButtonColor="?attr/colorOnBackground"
+            app:flashButtonVisible="true"
+            app:maskColor="@color/mask_black" />
+
+        <TextView
+            android:id="@+id/tv_scanner_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/custom_margins"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:text="Escanéando..."
+            android:textAlignment="center"
+            android:padding="@dimen/custom_padding" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mbtn_scanning_action"
+            android:layout_margin="@dimen/custom_margins"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/minimum_button_height_plus_padding"
+            android:padding="@dimen/custom_padding"
+            app:icon="@drawable/baseline_search_24"
+            android:text="Escanear" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

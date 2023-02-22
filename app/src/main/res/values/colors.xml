@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dutch_white">#FFD6CDA4</color>
+    <color name="amazon_green">#FF3D8361</color>
+    <color name="bottle_green">#FF1C6758</color>
+    <color name="ivory">#FFEEF2E6</color>
+    <color name="ivory_p_500">#FF777973</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="mask_black">#4D000000</color>
+
+
+</resources>
